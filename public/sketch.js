@@ -4,9 +4,9 @@ function setup() {
     createCanvas(600, 400);
     background(51);
 
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect('http://192.168.100.86:3000');
     socket.on('mouse', newDrawing);
-    socket.on('ZIGSIM/SyuFyMxNClLa0loa/touch01', newDeviceDrawing);
+    socket.on('ZIGSIM/kyamisukegram/touch01', newDeviceDrawing);
     socket.on('pads', newOperated);
 }
 

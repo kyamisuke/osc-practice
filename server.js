@@ -18,7 +18,7 @@ function newConnection(socket) {
     console.log('new connection: ' + socket.id)
 
     socket.on('mouse', mouseMsg);
-    socket.on('/ZIGSIM/SyuFyMxNClLa0loa/touch01', iosMsg);
+    socket.on('/ZIGSIM/kyamisukegram/touch01', iosMsg);
     socket.on('pads', controllerMsg);
 
     function mouseMsg(data) {
@@ -27,7 +27,7 @@ function newConnection(socket) {
     }
 
     function iosMsg(data) {
-        socket.broadcast.emit('ZIGSIM/SyuFyMxNClLa0loa/touch01', data);
+        socket.broadcast.emit('ZIGSIM/kyamisukegram/touch01', data);
         console.log(data);
     }
 
